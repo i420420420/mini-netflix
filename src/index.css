@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;600;700;800&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #0a0a0a;
+  --bg-card: #111111;
+  --bg-input: #0e0e0e;
+
+  --border: #1e1e1e;
+  --border-hover: rgba(148, 136, 166, 0.45);
+
+  --text: #e5e5e5;
+  --text-muted: #888888;
+  --text-dim: #484848;
+
+  /* PRIMARY THEME COLOR (NEW) */
+  --primary: #9488A6;
+  --primary-hover: #7f7393;
+
+  --primary-soft: rgba(148, 136, 166, 0.25);
+
+  --font-main: 'Inter', sans-serif;
+  --font-title: 'Manrope', sans-serif;
+  --font-logo: 'Bebas Neue', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+
+  font-family: var(--font-main);
+  font-size: 16px;
+  line-height: 1.6;
+
+  min-height: 100vh;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+button,
+input,
+textarea,
+select,
+a {
+  font-family: var(--font-main);
+}
+
+button {
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-title);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 999px;
+  transition: 0.2s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a3a;
+}
+
+::selection {
+  background: rgba(148, 136, 166, 0.25);
+  color: #ffffff;
+}

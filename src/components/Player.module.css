@@ -1,0 +1,125 @@
+.wrap {
+  margin-bottom: 2.5rem;
+  animation: fadeSlideIn 0.3s ease;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.meta {
+  margin-bottom: 1rem;
+}
+
+.metaTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.title {
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  font-style: italic;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.closeBtn {
+  background: none;
+  border: 1px solid #2a2a2a;
+  color: #777;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  font-size: 11px;
+
+  flex-shrink: 0;
+
+  transition: 0.2s ease;
+
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.closeBtn:hover {
+  color: #fff;
+  border-color: #9488A6;
+  box-shadow: 0 0 10px rgba(148, 136, 166, 0.25);
+}
+
+.pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.pill {
+  padding: 3px 10px;
+  background: #141414;
+  border: 1px solid #252525;
+  border-radius: 20px;
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+}
+
+/* rating / highlight pill */
+.gold {
+  border-color: rgba(148, 136, 166, 0.4);
+  color: #9488A6;
+  box-shadow: 0 0 10px rgba(148, 136, 166, 0.08);
+}
+
+/* episode badge */
+.badge {
+  border-color: rgba(148, 136, 166, 0.3);
+  color: #cfc6dc;
+}
+
+.overview {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.65;
+  max-width: 700px;
+}
+
+.playerBox {
+  background: #000;
+  border-radius: 10px;
+  overflow: hidden;
+
+  border: 1px solid #1e1e1e;
+
+  position: relative;
+
+  transition: 0.2s ease;
+}
+
+.playerBox:hover {
+  border-color: rgba(148, 136, 166, 0.25);
+}
+
+.playerBox iframe {
+  display: block;
+  width: 100%;
+  height: clamp(220px, 50vw, 560px);
+  border: none;
+}
+
+@media (max-width: 480px) {
+  .playerBox iframe {
+    height: 220px;
+  }
+}
