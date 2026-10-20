@@ -1,4 +1,4 @@
-# cine·scope
+#  murflix
 
 Minimal movie & TV streaming site built with React + Vite.
 
